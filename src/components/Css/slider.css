@@ -1,0 +1,143 @@
+.swip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #242323;
+  padding-bottom: 1rem;
+}
+.swipp {
+  max-width: 75%;
+}
+.box {
+  border-radius: 30px;
+  box-shadow: rgba(216, 190, 23, 0.4) 5px 5px, rgba(181, 160, 55, 0.3) 10px 10px,
+    rgba(246, 222, 12, 0.2) 15px 15px, rgba(255, 255, 255, 0.1) 20px 20px,
+    rgba(240, 234, 238, 0.05) 25px 25px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  /* gap: 5; */
+  margin-bottom: 4rem;
+  position: relative;
+  padding: 1rem;
+  margin: auto 0.1rem;
+  height: 22rem;
+  width: 22rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+@media (max-width: 991px) {
+  .box {
+    width: 16rem;
+  }
+}
+@media (max-width: 776px) {
+  .box {
+    margin: auto ;
+    width: 14rem;
+  }
+}
+.swip .main-title{
+  color: #d5d5d5;
+}
+
+.image {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+}
+.image img {
+  width: 100%; /* Set the width to 100% to make the image wider */
+  height: 100%; /* Set the height to 100% to make the image taller */
+  object-fit: cover; /* Maintain aspect ratio while covering the container */
+}
+
+.card {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  opacity: 10;
+}
+.card:hover {
+  opacity: 50;
+}
+.all {
+  display: flex;
+  flex-direction: column;
+  /* text-align: center; */
+  justify-content: start;
+  position: relative;
+  gap: 3;
+  max-width: 300px;
+}
+.icon {
+  color: blue;
+  width: 32px;
+  height: 32px;
+}
+.title {
+  font-size: 1.8rem;
+  color: beige;
+  font-weight: 800;
+}
+.content {
+  font-size: 1.1rem;
+  color: black;
+}
+.arrow {
+  margin-top: 8rem;
+  position: relative;
+  bottom: 5px;
+  left: 5px;
+  width: 2.5rem;
+  height: 2.5rem;
+  color: rgb(30, 30, 31);
+}
+.arrow::before {
+  content: "0" counter(services);
+  position: absolute;
+  background-color: var(--main-color);
+  color: white;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 80px;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 15px;
+}
+.arrow::after {
+  content: "";
+  position: absolute;
+  background-color: #d5d5d5;
+  color: red;
+  /* bottom: 0; */
+  left: 0px;
+  top: 50px;
+  /* right: 20px; */
+  width: 50px;
+  height: calc(100% + 0.4px);
+  transform: skewX(-20deg);
+}
+.box:hover .arrow {
+  color: rgb(44, 44, 39);
+  animation: moving-arrow 0.5s linear infinite;
+}
+.box:hover .card{
+  background-color: #f4eeee;
+}
+.box:hover .title{
+  color: #f3e351;
+  font-weight: 700;
+}
+@keyframes moving-arrow {
+  100% {
+    transform: translateX(20px);
+  }
+}

@@ -1,0 +1,17 @@
+/* header.css */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+  background-color: #ececec;
+}
+
+.serv {
+
+  position: relative;
+  margin-top: 14rem;
+  margin-bottom: 12rem;
+  /* padding-top: 100px; */
+  /* padding-bottom: 100px; */
+}

@@ -4,7 +4,7 @@ import "../components/Css/time-line.css";
 function TimeLine() {
   return (
     <>
-      <div className="timeline">
+      <div className="timeline" id ="about">
         <h2 class="main-title">Projects</h2>
         <div className="container- left-container">
           <img src="/amazon.png" />

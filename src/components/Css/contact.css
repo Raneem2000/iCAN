@@ -35,7 +35,7 @@
     /* border-right: 2px solid black; */
 
     background-color: #ececec;
-    z-index: -1;
+  z-index: -1;
   }
   @media (max-width: 991px) {
     .discount .image- {

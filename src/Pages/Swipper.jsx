@@ -13,7 +13,7 @@ import { ServiceData } from "../Data/constants";
 import "../components/Css/header.css";
 const ActiveSlider = () => {
   return (
-    <div className="serv swip flex items-center justify-center flex-col h-[900px] bg-[#6c34af]">
+    <div className="serv swip  flex items-center justify-center flex-col h-[900px] bg-[#6c34af]" id="project">
       <h2 class="main-title">Projects</h2>
 
       <Swiper

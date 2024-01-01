@@ -5,7 +5,7 @@ import "../components/Css/socialLink.css"
 // import img from "./s.svg";
 const Landing = () => {
   return (
-    <div className="hero">
+    <div className="hero" id="home">
       <div className="container">
         <div class="heroAreaText">
           <h1>

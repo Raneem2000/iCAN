@@ -10,7 +10,7 @@ import { Autoplay, FreeMode, Pagination } from "swiper/modules";
 
 import { RxArrowTopRight } from "react-icons/rx";
 import { ServiceData } from "../Data/constants";
-import "../components/Css/header.css";
+// import "../components/Css/header.css";
 const ActiveSlider = () => {
   return (
     <div className="serv swip  flex items-center justify-center flex-col h-[900px] bg-[#6c34af]" id="project">

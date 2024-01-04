@@ -10,7 +10,7 @@ const Landing = () => {
         <div class="heroAreaText">
           <h1>
             <TypeAnimation
-              sequence={["iCAN", 3000, "Softwear Company", 3000]}
+              sequence={["Welcome iCAN company", 3000]}
               wrapper="h1"
               speed={40}
               repeat={Infinity}

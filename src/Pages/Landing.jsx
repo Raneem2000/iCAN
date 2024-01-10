@@ -1,7 +1,7 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import "../components/Css/button.css";
-import "../components/Css/socialLink.css"
+import "../components/Css/socialLink.css";
 // import img from "./s.svg";
 const Landing = () => {
   return (
@@ -10,7 +10,7 @@ const Landing = () => {
         <div class="heroAreaText">
           <h1>
             <TypeAnimation
-              sequence={["Welcome iCAN company", 3000]}
+              sequence={["Welcome", 3000, "To our Company", 3000]}
               wrapper="h1"
               speed={40}
               repeat={Infinity}
@@ -45,7 +45,7 @@ const Landing = () => {
             </li>
           </ul>
         </div>
-{/* 
+        {/* 
         <div class="heroImg">
           <img src="/ii.svg" />
         </div> */}
